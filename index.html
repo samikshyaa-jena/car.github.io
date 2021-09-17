@@ -1,0 +1,549 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Cars Sale a Auto mobile Category Website</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".dropdown img.flag").addClass("flagvisibility");
+
+			$(".dropdown dt a").click(function () {
+				$(".dropdown dd ul").toggle();
+			});
+
+			$(".dropdown dd ul li a").click(function () {
+				var text = $(this).html();
+				$(".dropdown dt a span").html(text);
+				$(".dropdown dd ul").hide();
+				$("#result").html("Selected value is: " + getSelectedValue("sample"));
+			});
+
+			function getSelectedValue(id) {
+				return $("#" + id).find("dt a span.value").html();
+			}
+
+			$(document).bind('click', function (e) {
+				var $clicked = $(e.target);
+				if (!$clicked.parents().hasClass("dropdown"))
+					$(".dropdown dd ul").hide();
+			});
+
+
+			$("#flagSwitcher").click(function () {
+				$(".dropdown img.flag").toggleClass("flagvisibility");
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" href="css/global.css">
+	<!--thumb slider--->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				manualControls: '#slider3-pager',
+			});
+		});
+	</script>
+	<!---thumb slider--->
+</head>
+
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="header-bot">
+				<div class="logo">
+					<a href="single.html">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				<div class="cart">
+					<ul class="ph-no">
+						<li class="item  first_item">
+							<div class="item_html">
+								<span class="text1">Order delivery:</span>
+								<span class="text2">+800-0005-5289</span>
+							</div>
+						</li>
+					</ul>
+					<div id="top-search">
+						<form method="get" action="#">
+							<input type="text" name="s" class="input-search">
+							<input type="submit" value="Search" id="submit">
+						</form>
+					</div>
+					<div class="menu-main">
+						<ul class="dc_css3_menu">
+							<li class="active">
+								<a href="single.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="services.html">Services</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="wrap">
+			<div class="single">
+				<div class="box_wrapper">
+					<h1>Long Term Business</h1>
+				</div>
+				<div class="single-top">
+					<div class="thum-main">
+						<div class="slider">
+							<!-- Slideshow 3 -->
+							<ul class="rslides" id="slider">
+								<li>
+									<img src="images/pic10.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/pic9.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/pic8.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/pic11.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/pic12.jpg" alt="">
+								</li>
+								<li>
+									<img src="images/pic13.jpg" alt="">
+								</li>
+							</ul>
+							<!-- Slideshow 3 Pager -->
+							</br>
+							</br>
+							<ul id="slider3-pager">
+								<li>
+									<a href="#">
+										<img src="images/t-pic10.jpg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/t-pic9.jpg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/t-pic8.jpg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/t-pic11.jpg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/t-pic12.jpg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/t-pic13.jpg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="grid span_2_of_3">
+						<h3>CARSALE.NET</h3>
+						<p>Carsale.net is built for the automotive enthusiast and sports car fan in mind. Covering the auto industry with the latest news, new car reviews, videos, high-quality photography and all other amazing things car-related. Supercars.net is your source for all things automotive.</p>
+					</div>
+					<div class="clear"></div>
+<div>
+<div>
+<div>
+</div>
+</div>
+</div>
+
+
+
+
+
+				<p class="about-para" supercar manufacturers, both domestic and foreign, spend countless hours and dollars to develop the lightest, fastest, and most technologically advanced products on the road. Allowing their vehicles to be marketable and appealing to car enthusiasts, big spenders, and everyone in between. What’s their goal? Well, besides selling the pricey pieces of machinery… usually it’s to be a recognized leader in the world of high-performance and luxury automobiles. The fact is, not all cars are created equal, but here is proof that each supercar in our fleet offers something more than just a loud exhaust and insane speeds.</p>
+				<div class="clear"></div>
+				<div class="links">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/blog-icon1.png" title="date">
+								<span>june 14, 2013</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/blog-icon2.png" title="Admin">
+								<span>admin</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/blog-icon3.png" title="Comments">
+								<span>No comments</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/blog-icon4.png" title="Lables">
+								<span>View posts</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/blog-icon5.png" title="permalink">
+								<span>permalink</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="team">
+					<h2>Related Posts</h2>
+					<div class="section group">
+						<div class="col_1_of_4 span_1_of_4">
+							<img src="images/pic14.jpg" alt="" />
+						</div>
+						<div class="col_1_of_4 span_1_of_4">
+							<img src="images/pic15.jpg" alt="" />
+						</div>
+						<div class="col_1_of_4 span_1_of_4">
+							<img src="images/pic16.jpg" alt="" />
+						</div>
+						<div class="col_1_of_4 span_1_of_4">
+							<img src="images/pic17.jpg" alt="" />
+						</div>
+						<div class="clear"></div>
+					</div>
+<div class="main">
+		<div class="content-box">
+			<div class="wrap">
+				<div class="banner2">
+					<a href="#">
+						<div class="price">$50000</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="content-box1">
+			<div class="wrap">
+				<div class="banner2">
+					<a href="#">
+						<div class="price">$40000</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-content">
+		<div class="wrap">
+			<div class="main-box">
+				<div class="box_wrapper">
+					<h1>Featured Products</h1>
+				</div>
+				<div class="section group">
+					<div class="col_1_of_4 span_1_of_4">
+						<img src="images/pic.jpg" alt="" />
+						<div class="grid_desc">
+							<p class="title">2014 CORVETTE STINGRAY</p>
+							<p class="title1">Last  week we took a look the original Corvette Stingray which was introduced in 1965, and today, Chevy introduced the all-new Corvette and they brought back the Stingray designation. Below is a photo of the original Stingray from 1965 with the all-new 2014 Stingray.</p>
+							<div class="price1" style="height: 19px;">
+								<span class="reducedfrom">$80,0000</span>
+								<span class="actual">$12,00000</span>
+							</div>
+						</div>
+						<div class="Details">
+							<a href="single.html" title="Lorem ipsum dolor sit amet, consect etuer" class="button">Details
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="col_1_of_4 span_1_of_4">
+						<img src="images/pic1.jpg" alt="" />
+						<div class="grid_desc">
+							<p class="title">BMW "4" series</p>
+							<p class="title1">German car manufacturer BMW has unveiled the all-new 4-Series Coupe. The BMW 4-Series Coupe will make its public debut at the 2013 Frankfurt Motor Show this September. According to a statement released by the company, the BMW 4-Series Coupe will be offered with three turbocharged engine options with three more forced-induction units to follow shortly.</p>
+							<div class="price1" style="height: 19px;">
+								<span class="reducedfrom">$450000</span>
+								<span class="actual">$120000</span>
+							</div>
+						</div>
+						<div class="Details">
+							<a href="single.html" title="Lorem ipsum dolor sit amet, consect etuer" class="button">Details
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="col_1_of_4 span_1_of_4">
+						<img src="images/pic2.jpg" alt="" />
+						<div class="grid_desc">
+							<p class="title">AUDI A3 Sedan</p>
+							<p class="title1">The Sedan redefined: The Audi A3 Sedan combines Coupe character with elegant charm. The low, flowing roof conveys pure dynamics and with its muscular, taut surface, the Sedan shows off its inherent swagger.</p>
+							<div class="price1" style="height: 19px;">
+								<span class="reducedfrom">$31,99,000</span>
+								<span class="actual">$666,0000</span>
+							</div>
+						</div>
+						<div class="Details">
+							<a href="single.html" title="Lorem ipsum dolor sit amet, consect etuer" class="button">Details
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="col_1_of_4 span_1_of_4">
+						<img src="images/pic3.jpg" alt="" />
+						<div class="grid_desc">
+							<p class="title">Ferrari 458 Spider</p>
+							<p class="title1"></p>
+							<div class="price1" style="height: 19px;">
+								<span class="reducedfrom">$375 Crore</span>
+								<span class="actual">$488 Crore</span>
+							</div>
+						</div>
+						<div class="Details">
+							<a href="single.html" title="Lorem ipsum dolor sit amet, consect etuer" class="button">Details
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="section group">
+					<div class="col_1_of_4 span_1_of_4">
+						<img src="images/pic5.jpg" alt="" />
+						<div class="grid_desc">
+							<p class="title">Lorem ipsum dolor sitconsectetueradipis</p>
+							<p class="title1">Lorem ipsum dolor sitconsectetueradipis</p>
+							<div class="price1" style="height: 19px;">
+								<span class="reducedfrom">$66.00</span>
+								<span class="actual">$12.00</span>
+							</div>
+						</div>
+						<div class="Details">
+							<a href="single.html" title="Lorem ipsum dolor sit amet, consect etuer" class="button">Details
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="col_1_of_4 span_1_of_4">
+						<img src="images/pic4.jpg" alt="" />
+						<div class="grid_desc">
+							<p class="title">Lorem ipsum dolor sitconsectetueradipis</p>
+							<p class="title1">Lorem ipsum dolor sitconsectetueradipis</p>
+							<div class="price1" style="height: 19px;">
+								<span class="reducedfrom">$66.00</span>
+								<span class="actual">$12.00</span>
+							</div>
+						</div>
+						<div class="Details">
+							<a href="single.html" title="Lorem ipsum dolor sit amet, consect etuer" class="button">Details
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="col_1_of_4 span_1_of_4">
+						<img src="images/pic6.jpg" alt="" />
+						<div class="grid_desc">
+							<p class="title">Lorem ipsum dolor sitconsectetueradipis</p>
+							<p class="title1">Lorem ipsum dolor sitconsectetueradipis</p>
+							<div class="price1" style="height: 19px;">
+								<span class="reducedfrom">$66.00</span>
+								<span class="actual">$12.00</span>
+							</div>
+						</div>
+						<div class="Details">
+							<a href="single.html" title="Lorem ipsum dolor sit amet, consect etuer" class="button">Details
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="col_1_of_4 span_1_of_4">
+						<img src="images/pic7.jpg" alt="" />
+						<div class="grid_desc">
+							<p class="title">Lorem ipsum dolor sitconsectetueradipis</p>
+							<p class="title1">Lorem ipsum dolor sitconsectetueradipis</p>
+							<div class="price1" style="height: 19px;">
+								<span class="reducedfrom">$66.00</span>
+								<span class="actual">$12.00</span>
+							</div>
+						</div>
+						<div class="Details">
+							<a href="single.html" title="Lorem ipsum dolor sit amet, consect etuer" class="button">Details
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+					<div class="leave-comment">
+						<a href="#" name="comment">Leave a Comment</a>
+					</div>
+					<div class="comments-area">
+						<form>
+							<p>
+								<label>Name</label>
+								<span>*</span>
+								<input type="text" value="">
+							</p>
+							<p>
+								<label>Email</label>
+								<span>*</span>
+								<input type="text" value="">
+							</p>
+							<p>
+								<label>Website</label>
+								<input type="text" value="">
+							</p>
+							<p>
+								<label>Subject</label>
+								<span>*</span>
+								<textarea></textarea>
+							</p>
+							<p>
+								<input type="submit" value="Post">
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<div class="footer-top">
+				<div class="col_1_of_5 span_1_of_5">
+					<div class="footer-grid twitts">
+						<h3>Latest Tweets</h3>
+						<p>
+							<label>@Lorem ipsum</label>dolor sit amet, consectetur adipisicing elit.</p>
+						<span>10 minutes ago</span>
+						<p>
+							<label>@consectetur</label>dolor sit amet, consectetur adipisicing elit.</p>
+						<span>15 minutes ago</span>
+					</div>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<div class="footer-grid center-grid">
+						<h3>Recent posts</h3>
+						<ul>
+							<li>
+								<a href="#">eiusmod temporinc</a>
+							</li>
+							<li>
+								<a href="#">adipisicing elit, sed</a>
+							</li>
+							<li>
+								<a href="#">mod tempor incididunt</a>
+							</li>
+							<li>
+								<a href="#">dipisicing elit, sed do</a>
+							</li>
+							<li>
+								<a href="#">eiusmod temporinc</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<div class="footer-grid twitts">
+						<h3>Our Company</h3>
+						<div class="f_menu">
+							<ul>
+								<li>About your Company Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eui</li>
+								<li>Terms &amp; conditions Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eui</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<div class="call_info">
+						<p class="txt_3">Call us toll free:</p>
+						<p class="txt_4">1 800 234 23456</p>
+					</div>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<div class="footer-grid twitts">
+						<h3>Get in touch</h3>
+						<ul class="follow_icon">
+							<li>
+								<a href="#" style="opacity: 1;">
+									<img src="images/follow_icon.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#" style="opacity: 1;">
+									<img src="images/follow_icon1.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#" style="opacity: 1;">
+									<img src="images/follow_icon2.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#" style="opacity: 1;">
+									<img src="images/follow_icon3.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#" style="opacity: 1;">
+									<img src="images/follow_icon4.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#" style="opacity: 1;">
+									<img src="images/follow_icon5.png" alt="">
+								</a>
+							</li>
+						</ul>
+						<p>+1 111-111-1111</p>
+						<span>
+							<a href="mailto:srjena00@outlook.com">support(at)carssale.com</a>
+						</span>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		<div class="wrap">
+			<p>Copyright &copy; 2018 Car Sale. All Rights Reserved | Design by S.R. JENA & Team
+				
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>
